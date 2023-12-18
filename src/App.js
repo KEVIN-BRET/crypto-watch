@@ -1,11 +1,17 @@
-import React from 'react';
+import React, { useEffect, useState } from "react";
+import HeaderInfos from "./components/HeaderInfos";
+import axios from "axios";
 
 const App = () => {
-    return (
-        <div>
-            <h1>HELLO REACT :)</h1>
-        </div>
-    );
+ 
+
+  return (
+    <div className="app-container">
+      <header>
+        <HeaderInfos />
+      </header>
+    </div>
+  );
 };
 
 export default App;
